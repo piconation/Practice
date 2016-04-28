@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing</title>
+</head>
+<body>
+    <script>
+        var additem = (function () {
+        var cartitems = 0;
+        return function () {return cartitems +=1;}
+        })();
+        additem();
+        additem();
+        additem();
+
+        console.log(additem());
+    </script>
+</body>
+</html>
