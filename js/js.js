@@ -1,0 +1,1 @@
+document.getElementById('myexternaldiv').innerHTML = 'BOO YAH!';
