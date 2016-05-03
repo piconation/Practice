@@ -34,10 +34,16 @@ function createProfile(name, checkingBalance, savingsBalance, numOfChecks, inter
     checkingAcct.prototype = Object.create(Account.prototype);
 
     var checkingAcct = new checkingAcct(numOfChecks);
+    checkingAcct.balance = checkingBalance;
+    checkingAcct.accountNum = 12345678;
+
     var savingsAcct = new savingsAcct(interestRate);
+    savingsAcct.balance = savingsAcct;
+    savingsAcct.accountNum = 23456789;
 
-    
 
-    var profile = new Profile()
+    var profile = new Profile(name, savingsAcct, checkingAcct);
+
+    return profile;
 }
 
