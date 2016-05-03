@@ -8,7 +8,7 @@ function factorial(fish) {
         return -1;
     }
 
-    else if (fish == 0) {
+    else if (fish === 0) {
         return 1;
     }
 

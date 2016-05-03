@@ -2,7 +2,7 @@
  * Created by mattpowell on 5/2/16.
  */
 
-var bizCard = {name:"Matt Powell", address:"123 Main St", phone:"801-814-0599", email:"mnjpowell07@gmail.com", job:"Sushi Destroyer"};
+var bizCard = {name:"Matt Powell", address:"123 Main St<br>City, UT 84123", phone:"801-814-0599", email:"mnjpowell07@gmail.com", job:"Sushi Destroyer"};
 
 function card() {
     document.getElementById("name").innerHTML = bizCard.name;
