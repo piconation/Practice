@@ -7,7 +7,7 @@ function profile(name, savings, checking) {
     this.savings = savings;
     this.checking = checking;
 
-    this.transfer(accountTo, accountFrom, amount) {}
+    this.transfer(accountTo, accountFrom, amount);{}
 }
 
 //this.withdraw = function(amount) { };
@@ -19,15 +19,15 @@ var Account = function (balance, accountNum) {
 
     this.withdraw = function(amount) { };
     this.deposit = function(amount) { };
-}
+};
 
 var SavingsAcct = function (interestRate) {
     this.interestRate = interestRate;
-}
+};
 
 var CheckingAcct = function (numOfChecks) {
     this.numOfChecks = numOfChecks;
-}
+};
 
 function createProfile(name, checkingBalance, savingsBalance, numOfChecks, interestRate) {
 
