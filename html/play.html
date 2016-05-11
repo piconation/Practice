@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Playing</title>
 </head>
-<body>
+<body onclick="topWRs()">
+<div id="runit">
     <script>
-        var additem = (function () {
+        /*var additem = (function () {
         var cartitems = 0;
         return function () {return cartitems +=1;}
         })();
@@ -15,6 +16,20 @@
         additem();
 
         console.log(additem());
+        */
+
+        var WRs = ["Antonio", "Julio", "Odell", "Dez"];
+
+        document.getElementById("runit").innerHTML = WRs;
+
+        function topWRs() {
+            WRs.sort();
+            document.getElementById("runit").innerHTML = WRs;
+        }
+
     </script>
+</div>
 </body>
 </html>
+
+
