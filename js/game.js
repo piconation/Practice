@@ -32,7 +32,7 @@ function turnCard(itemid, cardtext, connection){
             document.getElementById(flippedone).style.display = "none";
             document.getElementById(flippedtwo).style.display = "none";
             cardsflipped = 0;
-            score++
+            score++;
             document.getElementById()
         }
         else{

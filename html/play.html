@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Playing</title>
 </head>
-<body onclick="topWRs()">
+<body> <!--onclick="topWRs()">-->
 <div id="runit">
     <script>
         /*var additem = (function () {
@@ -22,10 +22,15 @@
 
         document.getElementById("runit").innerHTML = WRs;
 
+        setTimeout(
         function topWRs() {
+
             WRs.sort();
             document.getElementById("runit").innerHTML = WRs;
-        }
+
+            },
+        5000
+        );
 
     </script>
 </div>
