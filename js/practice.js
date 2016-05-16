@@ -20,3 +20,10 @@ function checkmyAnswer(instring) {
     }
 }
 
+var str = "I love Halloween candy";
+
+var patt = /Halloween/i;
+
+var sr = str.search(patt);
+alert(sr);
+
