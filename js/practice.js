@@ -27,3 +27,27 @@ var patt = /Halloween/i;
 var sr = str.search(patt);
 alert(sr);
 
+
+//PROTOTYPES
+
+function vehicle(engineType, color, numberOfDoors,) {
+    this.engineType = engineType;
+    this.color = color;
+    this.numberOfDoors = numberOfDoors;
+}
+
+var myVehicle = new car('4cylinder', 'blue', 4);
+
+function truck(engineType, color, numberOfDoors, bedSize, allTerrain) {
+    vehicle.call(this, engineType, color, numberOfDoors);
+    this.bedSize = bedSize;
+    this.allTerrain = allTerrain;
+}
+
+truck.prototype = Object.create(vehicle.prototype);
+truck.prototype.constructor = truck;
+
+var myMonsterTruck = new truck('8cylinder', 'black', 6, '12\'', true);
+
+
+
