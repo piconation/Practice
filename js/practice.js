@@ -50,4 +50,19 @@ truck.prototype.constructor = truck;
 var myMonsterTruck = new truck('8cylinder', 'black', 6, '12\'', true);
 
 
+function validate() {
+    document.forms["address"].preventDefault();
+    var minimumLength = 2;
+    var street = document.forms["address"]["street"].value;
+    if (address == null || address.trim().length < minimumLength) {
+        alert("Address must be filled out");
+        return false;
+    }
+    //try address {
+        
+    }
+    //catch errors {
+        
+    }
+}
 
