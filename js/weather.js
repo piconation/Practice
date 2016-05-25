@@ -16,3 +16,6 @@ function getinfo() {
     xhttp.send();
 }
 
+function convert() {
+    var temp = new temp
+}
