@@ -27,3 +27,75 @@ function stringy(mystring) {
 console.log(stringy("so"));
 //enter a value that is not 5 characters
 console.log(stringy("shorten"));
+
+var stack;
+
+beforeEach(function () {
+    stack = new Stack();
+});
+
+describe('push', function() {
+
+    it('increases the size of the stack', function() {
+        stack.push(45645);
+        expect(stack.size()).toEqual(1);
+    });
+
+    it('succeeds on a number input', function() {
+        var success = stack.push(45455);
+        expect(success).toBeTruthy();
+        expect(stack.size()).toEqual(1);
+    });
+
+    it('fails on not an object input', function () {
+        var success = stack.push('&');
+        expect(success).toBeFalsy();
+        expect(stack.size()).toEqual(1);
+    });
+
+    it('fails on not an array input', function () {
+        var success = stack.push('&');
+        expect(success).toBeFalsy();
+        expect(stack.size()).toEqual(1);
+    });
+
+    it('fails on not a function input', function () {
+        var success = stack.push(function () {});
+        expect(success).toBeFalsy();
+        expect(stack.size()).toEqual(1);
+    });
+
+    it('fails on not a number input', function () {
+        var success = stack.push('&');
+        expect(success).toBeFalsy();
+        expect(stack.size()).toEqual(1);
+    });
+
+    it('fails on a negative input', function () {
+        var success = stack.push(-45455);
+        expect(success).toBeFalsy();
+        expect(stack.size()).toEqual(1);
+    });
+
+    it('fails on a decimal input', function () {
+        var success = stack.push(45455);
+        expect(success).toBeFalsy();
+        expect(stack.size()).toEqual(1);
+    });
+
+});
+
+describe('pop', function () {
+
+});
+
+describe('size', function () {
+
+});
+
+describe('isEmpty', function () {
+
+});
+
+
+
