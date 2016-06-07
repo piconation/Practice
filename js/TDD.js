@@ -97,5 +97,28 @@ describe('isEmpty', function () {
 
 });
 
+function LinkedList() {
+    this.head = null;
+    
+    this.insert = function (element) {
+        
+    };
+    
+    this.remove = function (element) {
+        
+    };
+    
+    this.contains = function (element) {
+        
+    };
+    
+    this.size = function () {
+        
+    };
+}
 
+function Node(value) {
+    this.value = value;
+    this.next = null;
+}
 
