@@ -20,7 +20,7 @@ function main() {
 
     currentState = states.Splash; //Game begins at the splash screen.
 
-    document.body.appendChild(canvas); //append the canvas we've created tot he body element in our html doc.
+    document.body.appendChild(canvas); //append the canvas we've created to the body element in our html doc.
 
     fish = new Fish();
     //coral = new CoralCollection();
@@ -101,10 +101,10 @@ function loadGraphics() {
     img.onload = function () {
         initiateSprites(this);
         renderingContext.fillStyle = backgroundSprite.color;
-        renderingContext.fillRect(0, 0, width, height);
-        backgroundSprite.draw(renderingContext, 0, height - backgroundSprite.height);
+        renderingContext.fillRect(200, 200, width, height);
+        backgroundSprite.draw(renderingContext, 200, height - backgroundSprite.height);
         backgroundSprite.draw(renderingContext, backgroundSprite.width, height - backgroundSprite.height); //sets background color
-        fishSprite[0].draw(renderingContext, 5, 5, 142, 50);
+        fishSprite[0].draw(renderingContext, 205, 205, 142, 50);
 
         /* Turned off temporarily
             okButton = {

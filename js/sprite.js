@@ -24,6 +24,6 @@ function initiateSprites(img) {
         new Sprite(img, 176, 172, 42, 28)
     ];
     
-    backgroundSprite = new Sprite(img, 0, 0, 138, 114);
+    backgroundSprite = new Sprite(img, 200, 200, 138, 114);
     backgroundSprite.color = "#8be4fd"; //sets background color
 }

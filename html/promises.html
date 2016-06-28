@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promises</title>
+</head>
+<body>
+    <div id="capitalize">
+        <script>
+        var allCapsPromise = allCaps('A string');
+        allCapsPromise.then(function (allCapsString) {
+        console.log(allCapsString);
+        });
+
+        function allCaps(input) {
+            return new Promise(function (resolve, reject) {
+                if (input.length == 0) {
+                    var error = {
+                        message: 'Input is not valid.'
+                    };
+                    reject(error);
+                }
+                var upperCaseInput = input.toUpperCase();
+                resolve(upperCaseInput);
+            })
+        }
+
+        //var allCapsString =
+
+        document.getElementById("runit").innerHTML = allCapsString;
+
+        setTimeout(
+            function capitalize() {
+
+                allCapsString.capitalize();
+                document.getElementById("runit").innerHTML = allCapsString;
+
+            },
+            4000
+        );
+
+        </script>
+    </div>
+</body>
+</html>
