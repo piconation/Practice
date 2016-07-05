@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+</head>
+<body ng-app ng-init="msg='Hello Dolly!'; words='Supercalifragilistic'">
+
+    <!--Double colon below binds the model once instead of twice.-->
+    <span ng-bind="::msg"></span>
+    <br>
+    <input type="text" ng-model="msg" />
+    <br>
+    <span ng-bind="words"></span>
+    <br>
+    <span> {{ 2 | date }}</span>
+    <br>
+    <span> {{ 5 | currency }}</span>
+    <br>
+    <span> {{ 87 | date }}</span>
+    <br>
+    <input type = "text" ng-model = "student.firstName">
+    <input type="text" ng-model="student.lastName">
+    <span> {{ student.fullName() | uppercase }}</span>
+</body>
+</html>
